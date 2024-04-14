@@ -61,6 +61,7 @@ Type command bellow in terminal or command line to testing are dbt can connect t
 ```
 dbt debug
 ```
+Also don't forget to copy dbt_project.yml to your dbt project folder location
 
 ### ELT Data Architecture & Data Modelling
 #### ELT Data Architecture
