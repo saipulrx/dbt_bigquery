@@ -9,8 +9,8 @@ This repository for course dbt and bigquery in digitalskola
 5) Testing dbt connection
 6) ELT Data Architecture & Data Modelling
 7) Upload raw data files
-8) Create models
-9) Create test
+8) Create Models
+9) Create Test
 10) Create documentations
 
 ### Install dbt core and dbt-bigquery
@@ -76,15 +76,24 @@ In this course, for Data Modelling use Kimbal's Method - Star Schema
 <b>ERD Logical</b>
 ![erd logical](https://github.com/saipulrx/dbt_bigquery/blob/main/assets/erd_logical.png)
 
-
 <b>ERD Physical</b>
+<br />
 ![erd physical](https://github.com/saipulrx/dbt_bigquery/blob/main/assets/erd_physical.png)
 
 ### Upload Raw Data Files
-Upload Raw data csv files in folder seeds use dbt cli command 
+- Upload Raw data csv files in folder seeds use dbt cli command 
 ```
 dbt seed
 ```
+- After that, there are new table in raw dataset
 
+### Create Models
+Copy paste all folder staging and warehouse to your local then run
+```
+dbt run
+```
 
+### Create Test
+
+### Create Documentation
 
