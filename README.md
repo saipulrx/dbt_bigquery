@@ -112,4 +112,37 @@ dbt test
 ```
 
 ### Create Documentation
+- Modify schema.yml under models/warehouse and copy paste bellow code
+```
+version: 2
 
+models:
+    - name: dim_product
+      description: Cleansed table which contains list of products.
+      columns:              
+          - name: product_id
+            description: Primary key for the product
+            tests:
+                - not_null
+                - unique
+          - name: product_code
+            description: code of each product
+            tests:
+                - not_null
+    - name: fact_inventory
+      columns:
+          - name: inventory_id
+            description: Primary key for the fact inventory table
+            tests:
+                - not_null
+                - unique
+```
+- Run dbt cli bellow for generate your project's documentation. 
+```
+dbt docs generate
+```
+
+- Run dbt cli bellow for display dbt webserver in browser. Default port is 8080 but you can use different port using --port flag 
+```
+dbt docs serve --port 8001
+```
