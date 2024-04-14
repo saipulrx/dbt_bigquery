@@ -5,11 +5,11 @@ This repository for course dbt and bigquery in digitalskola
 1) Install dbt core and dbt-bigquery
 2) Setup BigQuery connection for dbt
 3) Testing dbt connection
-4) Upload raw data files
-5) Create simple models
-6) Create simple test
-7) Create documentations
-8) Create snapshot
+4) ELT Data Architecture
+5) Upload raw data files
+6) Create models
+7) Create test
+8) Create documentations
 
 ### Install dbt core and dbt-bigquery
 #### Install using pip and virtual environments
