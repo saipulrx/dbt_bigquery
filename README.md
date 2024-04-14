@@ -1,11 +1,11 @@
-# Exercise dbt and Bigquery 
+# Hands On dbt and Bigquery 
 This repository for course dbt and bigquery in digitalskola
 
 ## Table of Content
 1) Install dbt core and dbt-bigquery
 2) Setup BigQuery connection for dbt
 3) Testing dbt connection
-4) ELT Data Architecture
+4) ELT Data Architecture & Data Modelling
 5) Upload raw data files
 6) Create models
 7) Create test
@@ -43,4 +43,19 @@ Type command bellow in terminal or command line to testing are dbt can connect t
 ```
 dbt debug
 ```
+
+### ELT Data Architecture & Data Modelling
+#### ELT Data Architecture
+
+
+#### Data Modelling
+In this course, for Data Modelling use Kimbal's Method - Star Schema
+
+<b>ERD Conceptual</b>
+<br/>
+<b>ERD Logical</b>
+<br/>
+<b>ERD Physical</b>
+
+
 
