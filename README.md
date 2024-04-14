@@ -4,12 +4,14 @@ This repository for course dbt and bigquery in digitalskola
 ## Table of Content
 1) Install dbt core and dbt-bigquery
 2) Setup BigQuery connection for dbt
-3) Testing dbt connection
-4) ELT Data Architecture & Data Modelling
-5) Upload raw data files
-6) Create models
-7) Create test
-8) Create documentations
+3) Testing dbt installation
+4) Setup dbt with bigquery as data platform
+5) Testing dbt connection
+6) ELT Data Architecture & Data Modelling
+7) Upload raw data files
+8) Create models
+9) Create test
+10) Create documentations
 
 ### Install dbt core and dbt-bigquery
 #### Install using pip and virtual environments
@@ -33,11 +35,27 @@ python -m pip install dbt-bigquery
 ### Setup BigQuery Connection for dbt
 Please refer to [BigQuery Configs](https://docs.getdbt.com/docs/core/connect-data-platform/bigquery-setup#authentication-methods)
 
-### Testing dbt installation & connection
+### Testing dbt installation
 Type command bellow in terminal or command line to testing are dbt is succcessfully installed
 ```
 dbt --version
 ```
+
+### Setup dbt with bigquery as data platform
+- Run dbt cli to init dbt with BigQuery as data platform
+```
+dbt init <your project name>
+```
+- Choose bigquery for database
+- Choose service account file
+- Input full path location service account file
+- Input GCP Project ID
+- Input dataset in BigQuery
+- Input threads 1
+- Input job execution timeout seconds 300
+- Choose US as desired location option
+
+### Testing dbt connection
 
 Type command bellow in terminal or command line to testing are dbt can connect to BigQuery or other data platform
 ```
@@ -56,6 +74,13 @@ In this course, for Data Modelling use Kimbal's Method - Star Schema
 <b>ERD Logical</b>
 <br/>
 <b>ERD Physical</b>
+<br/>
+
+### Upload Raw Data Files
+Upload Raw data csv files in folder seeds use dbt cli command 
+```
+dbt seed
+```
 
 
 
