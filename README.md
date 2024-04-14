@@ -94,6 +94,22 @@ dbt run
 ```
 
 ### Create Test
+- Create schema.yml under models/warehouse and copy paste bellow code
+```
+version: 2
+
+models:
+    - name: dim_product
+      columns:              
+          - name: product_id
+            tests:
+                - not_null
+                - unique
+```
+- Run dbt cli bellow
+```
+dbt test
+```
 
 ### Create Documentation
 
