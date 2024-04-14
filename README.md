@@ -65,17 +65,20 @@ Also don't forget to copy dbt_project.yml to your dbt project folder location
 
 ### ELT Data Architecture & Data Modelling
 #### ELT Data Architecture
-
+![data_architecture](https://github.com/saipulrx/dbt_bigquery/blob/main/assets/elt_data_architecture.drawio.png)
 
 #### Data Modelling
 In this course, for Data Modelling use Kimbal's Method - Star Schema
 
 <b>ERD Conceptual</b>
-<br/>
+![erd conceptual](https://github.com/saipulrx/dbt_bigquery/blob/main/assets/erd_conceptual.png)
+
 <b>ERD Logical</b>
-<br/>
+![erd logical](https://github.com/saipulrx/dbt_bigquery/blob/main/assets/erd_logical.png)
+
+
 <b>ERD Physical</b>
-<br/>
+![erd physical](https://github.com/saipulrx/dbt_bigquery/blob/main/assets/erd_physical.png)
 
 ### Upload Raw Data Files
 Upload Raw data csv files in folder seeds use dbt cli command 
