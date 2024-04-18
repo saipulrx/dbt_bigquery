@@ -146,3 +146,8 @@ dbt docs generate
 ```
 dbt docs serve --port 8001
 ```
+
+# References :
+1. https://www.udemy.com/course/analytics-engineering-bootcamp
+2. https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-learn-dbt/
+3. https://docs.getdbt.com/docs/core/connect-data-platform/bigquery-setup
